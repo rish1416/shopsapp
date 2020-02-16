@@ -1,0 +1,146 @@
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-nav,
+.navbar-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.navbar-nav li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+.navbar-nav li:hover > ul,
+.navbar-nav li.sfHover > ul {
+  display: block;
+}
+
+.navbar-nav ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.navbar-nav ul li {
+  min-width: 180px;
+}
+
+.sf-arrows .sf-with-ul {
+    padding-right: 30px;
+  }
+  
+  .sf-arrows .sf-with-ul:after {
+    content: "\f107";
+    position: absolute;
+    right: 15px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  .sf-arrows ul .sf-with-ul:after {
+    content: "\f105";
+  }
+  
+  .navbar-nav a {
+    padding: 0 8px 10px 8px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    outline: none;
+  }
+  
+  .navbar-nav > li {
+    margin-left: 10px;
+  }
+ 
+  .navbar-nav > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2dc997;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .navbar-nav a:hover:before,
+  .navbar-nav li:hover > a:before,
+  .navbar-nav li.active> a:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  .navbar-nav ul {
+    margin: 4px 0 0 0;
+    border: 1px solid #e7e7e7;
+  }
+  
+  .navbar-nav ul li {
+    background: #fff;
+  }
+  
+  .navbar-navul li:first-child {
+    border-top: 0;
+  }
+  
+  .navbar-nav ul li a {
+    padding: 10px;
+    color: #333;
+    transition: 0.3s;
+    display: block;
+    font-size: 13px;
+    text-transform: none;
+  }
+  
+  .navbar-nav ul li a:hover {
+    background: #2dc997;
+    color: #fff;
+  }
+  
+  .navbar-nav ul ul {
+    margin: 0;
+  }
+  
+
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+  }
+  
